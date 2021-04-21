@@ -31,11 +31,17 @@ export default function Table() {
                     {employees.map((emp) => (
                         <tr>
                             <th scope="row">
-                                <img
-                                    alt={emp.name.last}
-                                    className="img-fluid"
-                                    src={emp.picture.medium}
-                                />
+                                <button type="button">
+                                    <img
+                                        alt={emp.name.last}
+                                        className="img-fluid"
+                                        src={emp.picture.medium}
+                                        data-toggle="popover"
+                                        title="Click for Extra Info"
+                                        data-content={emp.gender}
+                                        {...emp.dob.age}
+                                    />
+                                </button>
                             </th>
                             <td>{emp.name.last}</td>
                             <td>{emp.name.first}</td>
