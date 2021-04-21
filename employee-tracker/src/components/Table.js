@@ -15,7 +15,7 @@ export default function Table() {
 
     return (
         <div className="container">
-            <table className="table table-striped table-dark">
+            <table className="table table-dark table-hover">
                 <thead>
                     <tr>
                         <th scope="col">Image</th>
@@ -23,20 +23,41 @@ export default function Table() {
                         <th scope="col">Last</th>
                         <th scope="col">E-mail</th>
                         <th scope="col">Phone</th>
+                        <th scope="col">Username</th>
+                        <th scope="col">SS#</th>
                     </tr>
                 </thead>
                 <tbody>
                     {employees.map((emp) => (
                         <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
+                            <th scope="row">
+                                <img
+                                    alt={emp.name.last}
+                                    className="img-fluid"
+                                    src={emp.picture.medium}
+                                />
+                            </th>
+                            <td>{emp.name.last}</td>
+                            <td>{emp.name.first}</td>
+                            <td>{emp.email}</td>
+                            <td>{emp.cell}</td>
+                            <td>{emp.login.username}</td>
+                            <td>{emp.id.value}</td>
                         </tr>
                     ))}
                 </tbody>
             </table>
+
+            <footer className="justify-content-center">
+                <p>
+                    &copy; 2020{" "}
+                    <img
+                        src="./assets/images/sslogo.jpg"
+                        class="rounded"
+                        height="50px"
+                    />
+                </p>
+            </footer>
         </div>
     );
 }
