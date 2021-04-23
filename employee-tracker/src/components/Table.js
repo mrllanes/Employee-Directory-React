@@ -15,12 +15,13 @@ export default function Table() {
     }, []);
 
     const huntEmployees = setEmployees.slice;
+    const [peeps, setPeeps] = useState(huntEmployees);
     const [search, setSearch] = useState("");
 
     const handleSearch = ({ target }) => {
         const { value } = target;
         setSearch(value);
-        if (!search) setEmployees(huntEmployees);
+        if (!search) setPeeps(huntEmployees);
         else {
             const filteredEmployees = huntEmployees.filter((emps) => {
                 return (
@@ -29,7 +30,7 @@ export default function Table() {
                     emps.email.includes(value)
                 );
             });
-            setEmployees(filteredEmployees);
+            setPeeps(filteredEmployees);
         }
     };
 
@@ -38,7 +39,7 @@ export default function Table() {
             <div className="container py-4">
                 <SearchField value={search} handleChange={handleSearch} />
                 <div className="row">
-                    {employees.map((people) => (
+                    {peeps.map((people) => (
                         <div key={people.id} className="col-3 my-4">
                             <setEmployees
                                 lastNames={people.name.last}
