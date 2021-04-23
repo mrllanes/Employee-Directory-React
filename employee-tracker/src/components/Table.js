@@ -14,29 +14,32 @@ export default function Table() {
         });
     }, []);
 
-    //     const filterEmployee =
-    // const [pokedex, setPokedex] = useState(limitedPokedex);
+    const huntEmployees = setEmployees.slice;
     const [search, setSearch] = useState("");
 
-    // const handleSearch = ({ target }) => {
-    //     const { value } = target;
-    //     setSearch(value);
-    //     if (!search) setPokedex(limitedPokedex);
-    //     else {
-    //       const filteredPokedex = limitedPokedex.filter((pokemon) => {
-    //         return pokemon.name.english.includes(value) || pokemon.type.includes(value)
-    //       });
-    //       setPokedex(filteredPokedex);
-    //     }
-    // };
+    const handleSearch = ({ target }) => {
+        const { value } = target;
+        setSearch(value);
+        if (!search) setEmployees(huntEmployees);
+        else {
+            const filteredEmployees = huntEmployees.filter((emps) => {
+                return (
+                    emps.name.last.includes(value) ||
+                    emps.name.first.includes(value) ||
+                    emps.email.includes(value)
+                );
+            });
+            setEmployees(filteredEmployees);
+        }
+    };
 
     return (
         <>
-            <div className="container py-5">
+            <div className="container py-4">
                 <SearchField value={search} handleChange={handleSearch} />
                 <div className="row">
                     {employees.map((people) => (
-                        <div key={people.id} className="col-3 my-5">
+                        <div key={people.id} className="col-3 my-4">
                             <setEmployees
                                 lastNames={people.name.last}
                                 firstNames={people.name.first}

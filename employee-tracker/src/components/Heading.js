@@ -7,6 +7,7 @@ export default function Heading() {
                 <h1 className="text-center">
                     Welcome to the Employee Directory
                 </h1>
+                <h2 className="text-center">And behold the power of React!</h2>
                 <blockquote className="blockquote text-right">
                     <p className="mb-0">React...Isn't it magical?</p>
                     <footer className="blockquote-footer">

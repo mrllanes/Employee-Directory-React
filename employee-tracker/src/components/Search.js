@@ -7,6 +7,7 @@ export const SearchField = ({ handleChange, value }) => (
             className="form-control"
             name="search"
             id="search"
+            email="search"
             onChange={handleChange}
             value={value}
         />
