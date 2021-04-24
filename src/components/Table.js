@@ -10,11 +10,8 @@ export default function Table() {
     useEffect(() => {
         // For demonstration purposes, we mock an API call.
         API.getUsers().then((res) => {
-            console.log(res.data.results);
             setEmployees(res.data.results);
             setPeeps(res.data.results);
-            console.log("Employees:");
-            console.log(employees);
         });
     }, []);
 
@@ -84,7 +81,12 @@ export default function Table() {
                 <footer className="justify-content-center">
                     <p>
                         &copy; 2020{" "}
-                        <img src="./sslogo.jpg" class="rounded" height="50px" />
+                        <img
+                            src="./sslogo.jpg"
+                            alt="sslogo"
+                            class="rounded"
+                            height="50px"
+                        />
                     </p>
                 </footer>
             </div>
