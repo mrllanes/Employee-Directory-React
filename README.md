@@ -1,6 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-# Employee Tracker - React
+# Employee Tracker - React!
 
 ## Deployed site
 
@@ -49,7 +49,7 @@ https://github.com/mrllanes
 
 ## Screenshots
 
-Please see the images below to see how the Llanes Workout Tracker App looks!
+Please see the images below to see how the Employee Tracker - React! App looks!
 ![Employee Tracker React Image 1](./assets/emptracker-image1.JPG)
 ![Employee Tracker React Image 1](./assets/emptracker-image2.JPG)
 ![Employee Tracker React Image 1](./assets/emptracker-image3.JPG)
