@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Employee Tracker - React
 
-## Available Scripts
+## Deployed site
 
-In the project directory, you can run:
+-   https://practical-bhabha-57a124.netlify.app/
+-   https://github.com/mrllanes/Employee-Directory-React
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+-   [Description](#description)
+-   [Installation](#installation)
+-   [Usage](#usage)
+-   [Technology](#technology)
+-   [Contributions](#contributions)
+-   [Questions](#questions)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Description
 
-### `npm test`
+Employee trackers and directories are easy ways to find/lookup information on your staff members. Here is a simple, yet powerful Employee Tracker for you to easily lookup information on any of your staff.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation Instructions
 
-### `npm run build`
+The Employee Tracker - React! is live at the above mentioned netlify link. You can go now to the website and see how the app works with the API populated information. Alternatively, you can branch to this repo, download the files, execute "npm install" to install all the dependencies. After the npm installs are done, execute "npm start." Since this is a React program, it will automatically launch your default browser with a new tab showing "localhost:3000." At this point you can choose to replace the Randomuser API information with your own, and there you have it!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The employee information included in this code is API generated. Replace this API information with your employee database (i.e. Mongo Database or MySQL Database). Launch your web interface and all of your employee's information will auto-populate. In the Search bar, start typing in the first name, last name, or email of the specific person you want to find. As you type the name, the employee table will filter the employees to what you are typing in, dynamically and on the fly.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technology Stack
 
-### `npm run eject`
+The following technologies were used to create this site/application/software/project:
+HTML, CSS, Bootstrap, Node, React, Random User API, and more.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Contributions
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The following individuals contributed to the creation of this site/application/software/project:
+The following individuals contributed to the creation of this site/application/software/project:
+Super Awesome support team and Incredibly Awesome Instructor/Facilitator. Also very nice and enthusiastic Cohort members.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Questions
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+If you have questions or comments about this project, please feel free to contact me via e-mail:
+llanesm@gmail.com
 
-## Learn More
+You can also find more of my projects on my GitHub page:
+https://github.com/mrllanes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Screenshots
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Please see the images below to see how the Llanes Workout Tracker App looks!
+![Employee Tracker React Image 1](./assets/emptracker-image1.JPG)
+![Employee Tracker React Image 1](./assets/emptracker-image2.JPG)
+![Employee Tracker React Image 1](./assets/emptracker-image3.JPG)
