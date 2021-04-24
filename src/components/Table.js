@@ -30,6 +30,7 @@ export default function Table() {
                     emps.email.includes(value)
                 );
             });
+            console.log(filteredEmployees);
             setPeeps(filteredEmployees);
         }
     };
@@ -38,17 +39,6 @@ export default function Table() {
         <>
             <div className="container py-4">
                 <SearchField value={search} handleChange={handleSearch} />
-                <div className="row">
-                    {peeps.map((people) => (
-                        <div key={people.id} className="col-3 my-4">
-                            <setEmployees
-                                lastNames={people.name.last}
-                                firstNames={people.name.first}
-                                emails={people.email}
-                            />
-                        </div>
-                    ))}
-                </div>
             </div>
 
             <div className="container">
@@ -65,7 +55,7 @@ export default function Table() {
                         </tr>
                     </thead>
                     <tbody>
-                        {employees.map((emp) => (
+                        {peeps.map((emp) => (
                             <tr>
                                 <th scope="row">
                                     <button type="button">
