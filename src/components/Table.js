@@ -1,29 +1,29 @@
 import React, { useState, useEffect } from "react";
 import API from "../utils/API";
-import { SearchField } from "../components/Search";
+import { SearchField } from "./Search";
 
 export default function Table() {
     const [employees, setEmployees] = useState([]);
+    const [peeps, setPeeps] = useState([]);
+    const [search, setSearch] = useState("");
+
     useEffect(() => {
         // For demonstration purposes, we mock an API call.
         API.getUsers().then((res) => {
             console.log(res.data.results);
             setEmployees(res.data.results);
+            setPeeps(res.data.results);
             console.log("Employees:");
             console.log(employees);
         });
     }, []);
 
-    const huntEmployees = setEmployees.slice;
-    const [peeps, setPeeps] = useState(huntEmployees);
-    const [search, setSearch] = useState("");
-
     const handleSearch = ({ target }) => {
         const { value } = target;
         setSearch(value);
-        if (!search) setPeeps(huntEmployees);
+        if (!search) setPeeps(employees);
         else {
-            const filteredEmployees = huntEmployees.filter((emps) => {
+            const filteredEmployees = employees.filter((emps) => {
                 return (
                     emps.name.last.includes(value) ||
                     emps.name.first.includes(value) ||
