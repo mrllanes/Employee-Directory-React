@@ -80,7 +80,7 @@ export default function Table() {
 
                 <footer className="justify-content-center">
                     <p>
-                        &copy; 2020{" "}
+                        &copy; 2021{" "}
                         <img
                             src="./sslogo.jpg"
                             alt="sslogo"
